@@ -43,6 +43,5 @@ for tt = 1:iter
 %     pp = nn / sum(nn);
 %     entro(tt) = -sum(pp.*(log(pp+eps)));
 end
-plot(OF)
 mu = H'*mu;
 toc

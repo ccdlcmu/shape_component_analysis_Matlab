@@ -1,5 +1,5 @@
-# shape_factor_analysis_Matlab
-Matlab scripts for performing shape factor analysis. This respository contains
+# shape_component_analysis_Matlab
+Matlab scripts for performing shape component analysis. This respository contains
 - Matlab scripts for dimension reduction on N-dimensional shape space
 - Matlab scripts for meanshift clustering on N-dimensional shape space
 - related data for demonstration
