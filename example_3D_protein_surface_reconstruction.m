@@ -29,7 +29,7 @@ n_sample = size(y0,3);
 
 
 tic
-[yt U S] = shape_factor_analysis(y0, 160);
+[yt U S] = shape_component_analysis(y0, 160);
 
 clear yt
 toc

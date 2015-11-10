@@ -22,7 +22,7 @@ end
 % 
 y0 = SH_to_shape(fvec_tmp);
 
-[yr_2d05 U S] = shape_factor_analysis(y0, 80);
+[yr_2d05 U S] = shape_component_analysis(y0, 80);
 
 [vs fs] = sphereMesh([0 0 0 1]);
 Zs = calculate_SPHARM_basis(vs, 31);

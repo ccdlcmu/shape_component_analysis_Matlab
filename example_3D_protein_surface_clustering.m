@@ -23,7 +23,7 @@ dim = size(y0,2);
 n_sample = size(y0,3);
 
 tic
-[yr_2d U S] = shape_factor_analysis(y0, 40);
+[yr_2d U S] = shape_component_analysis(y0, 40);
 
 
 display('processing nonlinear meanshift')

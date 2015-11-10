@@ -1,4 +1,4 @@
-function yc = return_example_2DPCA(yt, U, modes)
+function yc = return_example_SCA(yt, U, modes)
 
 
 % ind = zeros(1,length(modes)); 

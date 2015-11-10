@@ -41,7 +41,7 @@ for dd = 1:length(dim_projs)
     end
 
     % shape component analysis
-    [yt U S] = shape_factor_analysis(ym, ceil(dim_proj/2));
+    [yt U S] = shape_component_analysis(ym, ceil(dim_proj/2));
 
     toc
 
@@ -54,11 +54,11 @@ for dd = 1:length(dim_projs)
     end
 
 
-    dist_2DOCA(dd) = sqrt(mean(diag(abs(acos(abs(y0'*yc1))).^2)))
+    dist_SCA(dd) = sqrt(mean(diag(abs(acos(abs(y0'*yc1))).^2)))
     dist_PGA(dd) = sqrt(mean(sum((tgvector_rec - mulogR).^2)))
 
     weight = norm(abs(acos(abs(y0'*y0))),'fro');
-    distortion_2DOCA(dd) =  norm(abs(acos(abs(yc1'*yc1))) - abs(acos(abs(y0'*y0))),'fro')/weight;
+    distortion_SCA(dd) =  norm(abs(acos(abs(yc1'*yc1))) - abs(acos(abs(y0'*y0))),'fro')/weight;
     distortion_PGA(dd) = norm(pdist2(tgvector_rec',tgvector_rec') - abs(acos(abs(y0'*y0))),'fro')/weight;
 end
 

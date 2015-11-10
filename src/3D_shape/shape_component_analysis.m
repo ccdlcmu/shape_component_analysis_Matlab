@@ -1,4 +1,4 @@
-function [yt U S] = shape_factor_analysis(y0, dim_reduced)
+function [yt U S] = shape_component_analysis(y0, dim_reduced)
 % y0 s-by-d-by-n tensor, 
 % where s = dim(landmark), d = # landmarks, n = #examples
 

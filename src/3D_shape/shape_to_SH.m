@@ -6,4 +6,4 @@ function SHs = shape_to_SH(shapes)
 
 D = size(shapes,1);
 Lc = size(shapes,2);
-SHs = cat(2, zeros(D,1), shapes(:,1:Lc/2) + i * shapes(:,Lc/2 + (1:Lc/2)));
+SHs = cat(2, zeros(D,1), shapes(:,1:Lc/2) + 1i * shapes(:,Lc/2 + (1:Lc/2)));

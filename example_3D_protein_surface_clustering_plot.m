@@ -22,14 +22,14 @@ end
 % 
 y0 = SH_to_shape(fvec_tmp);
 
-[yr_2d05 U S] = shape_factor_analysis(y0, 10);
+[yr_2d05 U S] = shape_component_analysis(y0, 10);
 yc_2d05 = mean_shift_NDshape_full_procedure(yr_2d05, yr_2d05, 0.1, 100, U);
 
-[yr_2d10 U S] = shape_factor_analysis(y0, 20);
+[yr_2d10 U S] = shape_component_analysis(y0, 20);
 yc_2d10 = mean_shift_NDshape_full_procedure(yr_2d10, yr_2d10, 0.1, 100, U);
 
 
-[yr_2d20 U S] = shape_factor_analysis(y0, 40);
+[yr_2d20 U S] = shape_component_analysis(y0, 40);
 yc_2d20 = mean_shift_NDshape_full_procedure(yr_2d20, yr_2d20, 0.1, 100, U);
 
 

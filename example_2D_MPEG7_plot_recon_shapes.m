@@ -50,7 +50,7 @@ for dd = 1:length(dim_projs)
     end
 
     % shape component analysis
-    [yt U S] = shape_factor_analysis(ym, dim_proj);
+    [yt U S] = shape_component_analysis(ym, dim_proj);
 
     toc
 
